@@ -18,7 +18,7 @@ The project is organized as a monorepo using **Turborepo**, combining the follow
 
 Turborepo helps manage all these projects within a single repository for easier dependency management and consistency.
 
-### frontend-client
+### 1. frontend-client
 The frontend is a React project using version 18. Below are the key modules:
 
 - **React**: 18
@@ -60,7 +60,7 @@ or
 yarn build
 ```
 
-### backend
+### 2. backend
 The backend is an Express project. Key modules include:
 
 - **Express**: 4.15.2
@@ -88,7 +88,7 @@ or
 yarn start
 ```
 
-### frontend-admin
+### 3. frontend-admin
 The admin panel is a React project using version 18. Key modules include:
 
 - **React**: 18.2.0
@@ -114,7 +114,7 @@ or
 yarn start
 ```
 
-### contracts
+### 4. contracts
 The smart contract is written in **Solidity** and is used for managing on-chain operations.
 
 #### Installation
