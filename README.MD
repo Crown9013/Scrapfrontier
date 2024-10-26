@@ -8,6 +8,16 @@
 
 ## Project Structure
 
+### Monorepo Setup
+The project is organized as a monorepo using **Turborepo**, combining the following projects:
+
+1. **frontend-clent** - React.js + Tailwind CSS
+2. **backend** - Node.js
+3. **frontend-admin** - React.js + Tailwind CSS
+4. **contracts** - Solidity smart contract
+
+Turborepo helps manage all these projects within a single repository for easier dependency management and consistency.
+
 ### Frontend
 The frontend is a React project using version 18. Below are the key modules:
 
@@ -102,6 +112,29 @@ npm run start
 or
 ```sh
 yarn start
+```
+
+### Smart Contract
+The smart contract is written in **Solidity** and is used for managing on-chain operations.
+
+#### Installation
+To install dependencies for working with the smart contract, run:
+```sh
+npm install
+```
+or
+```sh
+yarn install
+```
+
+#### Deployment
+To deploy the smart contract, use the following command:
+```sh
+npm run deploy
+```
+or
+```sh
+yarn deploy
 ```
 
 ### MongoDB
