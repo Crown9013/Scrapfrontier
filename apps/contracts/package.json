@@ -1,0 +1,44 @@
+{
+  "name": "scrap_frontier_contracts",
+  "version": "1.0.0",
+  "description": "NFT contracts for the ScrapFrontier",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test:localhost": "npx hardhat test test/test.js --network localhost",
+    "test:testnet": "npx hardhat test test/test.js --network arbitrumSepolia",
+    "deploy:localhost": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "npx hardhat run scripts/deploy.js --network arbitrumSepolia",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network arbitrumMainnet",
+    "build": "echo 'Nothing to build'",
+    "lint": "eslint . --ext .js,.ts",
+    "test": "npx hardhat test"
+  },
+  "keywords": ["airdrop", "contracts", "hardhat"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "axios": "^1.4.0",
+    "chai": "^4.3.6",
+    "ethers": "^5.5.2",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.27",
+    "redis": "^4.6.6"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@types/node": "^17.0.5",
+    "dotenv": "^16.0.2",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "hardhat": "^2.3.0",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}

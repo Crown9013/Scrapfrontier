@@ -1,0 +1,44 @@
+.customized-list {
+    display: flex;
+    margin: auto;
+    padding: 1em 0;
+    gap: 1em;
+}
+
+.customized-list .list-img {
+    width: 25%;
+}
+
+.customized-list .list-body {
+    width: 75%;
+}
+
+.customized-list .list-body .list-body-title {
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 992px) {
+    .customized-list .list-img {
+        width: 33.3%;
+    }
+
+    .customized-list .list-body {
+        width: 66.7%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .customized-list {
+        display: block;
+    }
+
+    .customized-list .list-img {
+        width: 100%;
+    }
+
+    .customized-list .list-body {
+        padding: 1em 0;
+        width: 100%;
+    }
+
+}
